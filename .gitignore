@@ -1,0 +1,24 @@
+# Downloaded datasets, extracted upstream bundles, runtime artifacts and secrets.
+bop_toolkit/
+blenderproc/
+data/
+datasets/
+outputs/
+work_dirs/
+checkpoints/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.pth
+*.pt
+*.onnx
+*.engine
+.env
+.env.*
+*.env
+.git-credentials
+.netrc
+*.pem
+*.key

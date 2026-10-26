@@ -1,0 +1,2 @@
+# Install upstream runtime dependencies separately (see the repository README).
+pytest>=7

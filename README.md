@@ -1,5 +1,10 @@
 <h2 align="center">HccePose (BF)</h2>
 
+> **Fork addition:** [Frozen-PBR BOP training adaptation](bop_adaptation/README.md)
+> adds strict data/geometry checks, front/back label handling, fixed-budget
+> ResNet34 training and checkpoint recovery. Upstream model/PnP source files are
+> unchanged. This adaptation is not the published EfficientNet-B4 BOP benchmark recipe.
+
 <p align="center">
   <a href="https://arxiv.org/abs/2510.10177">
     <img src="https://img.shields.io/badge/arXiv-2510.10177-B31B1B.svg?logo=arxiv" alt="arXiv">

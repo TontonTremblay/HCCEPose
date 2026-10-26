@@ -1,0 +1,45 @@
+{
+  "upstream": "https://github.com/WangYuLin-SEU/HCCEPose",
+  "upstream_commit": "f75cc4d5db2fc298fc7b853f8c75273757872382",
+  "scope": "Portable port of the frozen-PBR training adaptation; no datasets/checkpoints/cluster configuration",
+  "files": {
+    "hccepose_data.py": {
+      "original_adapter_sha256": "2e043afcfa266b9537e346febeb77d822e274c9a2a94446f91866bcd8c4b36a8",
+      "ported_sha256": "9b48920ab3d06dd70c2cc7629513ae4d4530b3e93f50d926c2b972d00550b4b4"
+    },
+    "hccepose_train.py": {
+      "original_adapter_sha256": "f7d65bb08efd113b2cdd88889147e1b94f4a297da527ad5586abcaf438e4265c",
+      "ported_sha256": "1de79eb8243ceb54fc89ed49d4716d37148e0f897ff2efa56a7ecd4d9ce2b434"
+    },
+    "hccepose_smoke.py": {
+      "original_adapter_sha256": "34d450eb8dd0a5ac84293d5957d38b959bf972883a9bc9b7efe8643ba269710a",
+      "ported_sha256": "460398f118f44fda0c0021199a904e1fc9b32bc797889af155a30323e18e2da8"
+    },
+    "hccepose_prepare_visibility.py": {
+      "original_adapter_sha256": "22422476c998ec1fde826b536eba59fda9ebc667a8ba66850434a323886c2afb",
+      "ported_sha256": "22422476c998ec1fde826b536eba59fda9ebc667a8ba66850434a323886c2afb"
+    },
+    "hccepose_label_clipping.py": {
+      "original_adapter_sha256": "a7f877b772a12b67dffee40f05859134a03e3f5b2bb38b2cfcd79c5183e88fbb",
+      "ported_sha256": "ad1553de4b55ab408f8501f0e8f15dc39312e13f41464009e34fd1f35452cd88"
+    },
+    "hccepose_render_contract.py": {
+      "original_adapter_sha256": "d45f9f033cf8540761867c1fbe485198bf3aa6254454d2f11dc8e5c7baa3e3ec",
+      "ported_sha256": "d45f9f033cf8540761867c1fbe485198bf3aa6254454d2f11dc8e5c7baa3e3ec"
+    },
+    "hccepose_visibility_gate.py": {
+      "original_adapter_sha256": "b1a930f298a9a9bbcddc26c419ea80c989310c997bc39da4a9866ec3ad9aeb02",
+      "ported_sha256": "b1a930f298a9a9bbcddc26c419ea80c989310c997bc39da4a9866ec3ad9aeb02"
+    }
+  },
+  "port_differences": "repository-relative upstream discovery and portable preparation/contract CLI; fixed training math retained; ported code hashes differ from original experiment and need newly generated contracts",
+  "unchanged_training_function_ASTs": [
+    "train",
+    "validate",
+    "loss_state",
+    "restore_loss",
+    "atomic_checkpoint",
+    "labels",
+    "safe_pnp_backend"
+  ]
+}
